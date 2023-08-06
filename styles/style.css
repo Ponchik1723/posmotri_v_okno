@@ -85,7 +85,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -98,10 +98,6 @@ ol {
   align-items: center;
   width: fit-content;
   cursor: pointer;
-}
-
-.search-form__label:focus {
-  outline: none;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -127,7 +123,6 @@ ol {
   line-height: normal;
 }
 
-
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -139,7 +134,7 @@ ol {
 }
 .search-form__textfield {
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -154,6 +149,10 @@ ol {
   border-bottom: 1px solid #FFF;
   border-right: none;
   background-color: transparent;
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .search-form__checkbox-list {
