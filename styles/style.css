@@ -39,7 +39,7 @@ ol {
 }
 
 .content {
-  width: 1161px;
+  width: 1140px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -62,7 +62,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 100%;
+  object-position: center;
 }
 
 .search-form {
@@ -73,13 +73,19 @@ ol {
 }
 
 .search-form__fieldset {
+  color: #FFF;
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   border: none;
   position: relative;
 }
 
 .search-form__fieldset-title {
   color: #FFF;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: Fira Sans Condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -94,7 +100,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__textfield:focus {
+.search-form__label:focus {
   outline: none;
 }
 
@@ -132,9 +138,12 @@ ol {
   white-space: nowrap;
 }
 .search-form__textfield {
-  font-family: inherit; 
-  line-height: inherit;
   color: #FFF;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
   appearance: none;
   display: flex;
   min-width: 225px;
@@ -155,18 +164,19 @@ ol {
 
 .search-form__pseudo-checkbox {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 19px;
   height: 19px;
   border: 1px solid #FFF;
   margin-right: 5px;
 }
 
-input[type='checkbox']:checked + .search-form__pseudo-checkbox {
+input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
+  content: '';
   background-color: #FFF;
-  width: 16px;
-  height: 16px;
-  outline: 1px solid #FFF;
-  outline-offset: 1px;
+  width: 15px;
+  height: 15px;
 }
 
 .button {
@@ -250,7 +260,6 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 
 .content__card-link {
   display: block;
-  width: 100%;
   height: 100%;
   text-decoration: none;
   margin: 2px;
@@ -312,7 +321,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox {
 
 .content__video-card-thumbnail {
   object-fit: cover;
-  object-position: 100%;
+  object-position: center;
   width: 196px;
   height: 103px;
 }
